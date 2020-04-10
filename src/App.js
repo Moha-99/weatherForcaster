@@ -40,17 +40,6 @@ class App extends Component {
     setTimeout(() => this.setState({ alert: null }), 5000);
   };
 
-  // Clear weather
-  clearWeather = () =>
-    this.setState({
-      description: "",
-      temp: null,
-      city: "",
-      icon: undefined,
-      loading: false,
-      alert: null,
-    });
-
   render() {
     const {
       description,
